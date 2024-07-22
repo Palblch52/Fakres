@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>844</width>
-    <height>446</height>
+    <width>1263</width>
+    <height>522</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,9 +20,9 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>841</width>
+      <x>190</x>
+      <y>-10</y>
+      <width>881</width>
       <height>261</height>
      </rect>
     </property>
@@ -37,14 +37,14 @@
       <rect>
        <x>0</x>
        <y>10</y>
-       <width>851</width>
+       <width>891</width>
        <height>231</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Perpetua</family>
-       <pointsize>11</pointsize>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="frameShape">
@@ -63,7 +63,7 @@
       <bool>true</bool>
      </attribute>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>210</number>
+      <number>220</number>
      </attribute>
      <column>
       <property name="text">
@@ -72,12 +72,12 @@
      </column>
      <column>
       <property name="text">
-       <string>Новый столбец</string>
+       <string>Подразделение</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Подразделение</string>
+       <string>Количество рабочих дней</string>
       </property>
      </column>
      <column>
@@ -90,16 +90,16 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>280</y>
-      <width>341</width>
-      <height>81</height>
+      <x>0</x>
+      <y>0</y>
+      <width>191</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>14</pointsize>
+      <pointsize>10</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -111,16 +111,16 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>280</y>
-      <width>321</width>
-      <height>81</height>
+      <x>0</x>
+      <y>120</y>
+      <width>191</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>14</pointsize>
+      <pointsize>10</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -129,13 +129,108 @@
      <string>Считать данные</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>240</y>
+      <width>191</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Добавить работника</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>120</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Удалить работника</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>0</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Редактировать данные</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>250</y>
+      <width>881</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>851</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>844</width>
+     <width>1263</width>
      <height>21</height>
     </rect>
    </property>

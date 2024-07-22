@@ -10,17 +10,9 @@ win = uic.loadUi("employee.ui")
 
 Gr = Grup()
 Gr.read_data("text.txt")
-print("!!!", Gr.count)
-
-
-data = []
-data.append(('Заполнить', 'QTableWidget'))
-data.append(('с данными', 'в Python'))
-data.append(('очень', 'просто'))
-win.tableWidget.setRowCount(Gr.count)
-
 
 def btnLoadTable():
+    win.tableWidget.setRowCount(Gr.count)
     row = 0
     for x in Gr.A:
 
@@ -30,11 +22,18 @@ def btnLoadTable():
         win.tableWidget.setItem(row, 3, QTableWidgetItem(Gr.A[x].salary))
         row += 1
     
- 
+def btnAppendEmployee():
+    strEmployee = win.lineEdit.text()
+
+    Gr.appendEmployee(strEmployee)
+    win.lineEdit.clear()
+    win.tableWidget.clear()
+    btnLoadTable()
 
     
 win.pushButton.clicked.connect(btnLoadTable)
 
+win.pushButton_3.clicked.connect(btnAppendEmployee)
 
 win.show()
 sys.exit(app.exec())

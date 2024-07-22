@@ -6,6 +6,17 @@ class Employee:
         self.division = division
         self.days = days
         self.salary = salary
+    
+    def getEmployee_forTable(self):
+        w = []
+        print(self.fam+' '+self.name+' '+self.surname)
+        x = self.fam+' '+self.name+' '+self.surname
+        w.append(x)
+        w.append(self.division)
+        w.append(self.days)
+        w.append(self.salary)
+        print(w)
+        return w
 
 class Grup:
     def __init__(self):
@@ -20,6 +31,14 @@ class Grup:
             s += str(self.A[x])
             s += '\n'
         return s   
+
+    def appendEmployee(self, str_Employee):
+        parts = str_Employee.strip().split(" ")
+        self.A[self.count] = Employee(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5])
+
+        self.count += 1
+        with open('text.txt', 'a', encoding='utf-8') as file:
+            file.write('\n' + str_Employee)
 
     def read_data(self, file_name):
         self.A = {}
